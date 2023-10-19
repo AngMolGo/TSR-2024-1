@@ -23,7 +23,7 @@ El algoritmo "Go to Point Simple" o "Go to Goal" es una técnica utilizada en ro
 Las consideraciones que tomaremos en cuenta para la descripción del robot móvil serán las siguientes:
 
 - El modelo simplificado considera un robot móvil simétrico y uniforme con 2 ruedas a sus lados. (Fig. 1[^PID])
-![Fig 1. Modelo de robot móvil estándar](/Multimedia/Figura2.jpg)
+![Fig 1. Modelo de robot móvil estándar](./Multimedia/Figura2.jpg)
 - El sistema de referencia referenciado al robot será considerado una transformada homogénea del sistema, con una rotación sobre el eje z de $\theta$ y con un desplazamiento de $x_{0}$ y $y_{0}$. El vector $\vec{v}$ se describe sobre el eje x. La matriz de rotación se muestra a continuación:
 
 $$
