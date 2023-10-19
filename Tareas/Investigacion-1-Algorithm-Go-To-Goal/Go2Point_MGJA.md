@@ -42,7 +42,7 @@ De acuerdo con lo anterior, el algoritmo Go-to-Point puede considerarse como un 
 
 >**Problema**: Un robot móvil del **tipo (2,0)** se encuentra en el punto **$P_{0}(x_{0}, y_{0})$** con una rotación de **$\theta$** radianes en su eje **Z** (fig.2).  
 Se requiere llegar al punto **$P_{f}(x_{1}, y_{1})$** sin importar su orientación (**θ** radianes) de giro sobre su eje **Z** (fig.3).
-![Fig 2. Imagen de espacio 2D donde se mueve el carrito, con el robot móvil en un punto inicial.](https://github.com/AngMolGo/TSR-2024-1/blob/AngMolGo-Investigacion-Go-To-Point/Tareas/Investigacion-1-Algorithm-Go-To-Goal/Multimedia/Figura1.jpg)
+![Fig 2. Imagen de espacio 2D donde se mueve el carrito, con el robot móvil en un punto inicial.]((https://github.com/AngMolGo/TSR-2024-1/blob/AngMolGo-Investigacion-Go-To-Point/Tareas/Investigacion-1-Algorithm-Go-To-Goal/Multimedia/Figura1.jpg))
 ![Fig 3. Imagen de espacio 2D donde se mueve el carrito, con el robot móvil en el punto final deseado.](https://github.com/AngMolGo/TSR-2024-1/blob/AngMolGo-Investigacion-Go-To-Point/Tareas/Investigacion-1-Algorithm-Go-To-Goal/Multimedia/Figura2.jpg)
 
 Para solucionar esto, primero debemos asegurarnos de que el vector $\vec{v}$, sea paralelo al vector $\vec{w}$ formado por los puntos $P_{0}$ y $P_{f}$, para asegurarnos que el robot avanzará derecho  hacia el punto indicado, lo que quiere decir que $\vec{v} \times \vec{w} = 0$. 
