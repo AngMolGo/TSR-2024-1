@@ -23,7 +23,7 @@ El algoritmo "Go to Point Simple" o "Go to Goal" es una técnica utilizada en ro
 Las consideraciones que tomaremos en cuenta para la descripción del robot móvil serán las siguientes:
 
 - El modelo simplificado considera un robot móvil simétrico y uniforme con 2 ruedas a sus lados. (Fig. 1[^PID])
-![Fig 1. Modelo de robot móvil estándar]([/Multimedia/Figura2.jpg](https://github.com/AngMolGo/TSR-2024-1/blob/AngMolGo-Investigacion-Go-To-Point/Tareas/Investigacion-1-Algorithm-Go-To-Goal/Multimedia/Figura1.jpg))
+![Fig 1. Modelo de robot móvil estándar]([(https://github.com/AngMolGo/TSR-2024-1/blob/AngMolGo-Investigacion-Go-To-Point/Tareas/Investigacion-1-Algorithm-Go-To-Goal/Multimedia/Figura1.jpg)](https://github.com/AngMolGo/TSR-2024-1/blob/main/Tareas/Investigacion-1-Algorithm-Go-To-Goal/Multimedia/modelo_carro_turtlebot3.png))
 
 - El sistema de referencia referenciado al robot será considerado una transformada homogénea del sistema, con una rotación sobre el eje z de $\theta$ y con un desplazamiento de $x_{0}$ y $y_{0}$. El vector $\vec{v}$ se describe sobre el eje x. La matriz de rotación se muestra a continuación:
 
@@ -43,8 +43,8 @@ De acuerdo con lo anterior, el algoritmo Go-to-Point puede considerarse como un 
 
 >**Problema**: Un robot móvil del **tipo (2,0)** se encuentra en el punto **$P_{0}(x_{0}, y_{0})$** con una rotación de **$\theta$** radianes en su eje **Z** (fig.2).  
 Se requiere llegar al punto **$P_{f}(x_{1}, y_{1})$** sin importar su orientación (**θ** radianes) de giro sobre su eje **Z** (fig.3).
-![Fig 2. Imagen de espacio 2D donde se mueve el carrito, con el robot móvil en un punto inicial.](/Multimedia/Figura1.jpg)
-![Fig 3. Imagen de espacio 2D donde se mueve el carrito, con el robot móvil en el punto final deseado.](/Multimedia/Figura2.jpg)
+![Fig 2. Imagen de espacio 2D donde se mueve el carrito, con el robot móvil en un punto inicial.](https://github.com/AngMolGo/TSR-2024-1/blob/main/Tareas/Investigacion-1-Algorithm-Go-To-Goal/Multimedia/Figura1.jpg)
+![Fig 3. Imagen de espacio 2D donde se mueve el carrito, con el robot móvil en el punto final deseado.]((https://github.com/AngMolGo/TSR-2024-1/blob/main/Tareas/Investigacion-1-Algorithm-Go-To-Goal/Multimedia/Figura2.jpg))
 
 Para solucionar esto, primero debemos asegurarnos de que el vector $\vec{v}$, sea paralelo al vector $\vec{w}$ formado por los puntos $P_{0}$ y $P_{f}$, para asegurarnos que el robot avanzará derecho  hacia el punto indicado, lo que quiere decir que $\vec{v} \times \vec{w} = 0$. 
 Sin embargo, una manera más fácil de realizar esto, es haciendo una comparación escalar entre el ángulo que describe la dirección del vector $\vec{w}$ y el ángulo de giro $\theta$ de la transformada del sistema del robot. Lo que buscamos, es que sean el mismo ángulo, por lo tanto, la relación que buscamos es:
