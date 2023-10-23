@@ -48,7 +48,7 @@ Se requiere llegar al punto **$P_{f}(x_{1}, y_{1})$** sin importar su orientaci�
 ![Fig 2. Imagen de espacio 2D donde se mueve el carrito, con el robot móvil en un punto inicial.](https://github.com/AngMolGo/TSR-2024-1/blob/main/Tareas/Investigacion-1-Algorithm-Go-To-Goal/Multimedia/Figura1.jpg)
 >Figura 2. Imagen de espacio 2D donde se mueve el carrito.
 ![Fig 3. Imagen de espacio 2D donde se mueve el carrito, con el robot móvil en el punto final deseado.](https://github.com/AngMolGo/TSR-2024-1/blob/main/Tareas/Investigacion-1-Algorithm-Go-To-Goal/Multimedia/Figura2.jpg)
->Fig 3. Imagen de espacio 2D donde se mueve el carrito, con el robot móvil en el punto final deseado.
+>Figura 3. Imagen de espacio 2D donde se mueve el carrito, con el robot móvil en el punto final deseado.
 
 Para solucionar esto, primero debemos asegurarnos de que el vector $\vec{v}$, sea paralelo al vector $\vec{w}$ formado por los puntos $P_{0}$ y $P_{f}$, para asegurarnos que el robot avanzará derecho  hacia el punto indicado, lo que quiere decir que $\vec{v} \times \vec{w} = 0$. 
 Sin embargo, una manera más fácil de realizar esto, es haciendo una comparación escalar entre el ángulo que describe la dirección del vector $\vec{w}$ y el ángulo de giro $\theta$ de la transformada del sistema del robot. Lo que buscamos, es que sean el mismo ángulo, por lo tanto, la relación que buscamos es:
